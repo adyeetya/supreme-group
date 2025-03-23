@@ -1,0 +1,39 @@
+@import "tailwindcss";
+@layer base {
+  html {
+    scroll-snap-type: y mandatory;
+  }
+  section {
+    scroll-snap-align: start;
+  }
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.testclass{
+  /* background-color: red; */
+}
+
+/* Custom Swiper Pagination Bullets */
+/* Custom Swiper Pagination Bullets */
+.swiper-pagination-bullet-custom {
+  width: 8px; /* Inactive dot width */
+  height: 8px; /* Inactive dot height */
+  background-color: rgba(255, 0, 0, 0.5); /* Inactive dot color (red with 50% opacity) */
+  border-radius: 4px; /* Slightly rounded for inactive dots */
+  opacity: 1;
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+.swiper-pagination-bullet-custom.swiper-pagination-bullet-active {
+  width: 24px; /* Active dot width (capsule shape) */
+  height: 8px; /* Active dot height */
+  background-color: #3b82f6; /* Active dot color (blue) */
+  border-radius: 4px; /* Capsule shape */
+}
