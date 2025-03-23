@@ -15,7 +15,7 @@ const Navbar = () => {
     
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-      const navbarHeight = navbarRef.current?.offsetHeight || 0;
+ 
 
       if (!ticking) {
         window.requestAnimationFrame(() => {

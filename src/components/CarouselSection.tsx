@@ -54,9 +54,14 @@ const SecondSection = () => {
     useEffect(() => {
         const currentVideo = videoRefs.current[activeTab];
         if (currentVideo) {
-            videoStates[activeTab].isPlaying ? currentVideo.play() : currentVideo.pause();
+            if (videoStates[activeTab].isPlaying) {
+                currentVideo.play();
+            } else {
+                currentVideo.pause();
+            }
         }
     }, [activeTab, videoStates]);
+    
 
     // Handle scroll to switch tabs
     useEffect(() => {
@@ -89,10 +94,15 @@ const SecondSection = () => {
                     isPlaying: !video.paused,
                 },
             }));
-
-            video.paused ? video.play() : video.pause();
+    
+            if (video.paused) {
+                video.play();
+            } else {
+                video.pause();
+            }
         }
     };
+    
 
     // Update progress for a specific tab
     const updateProgress = (tab: TabType) => {

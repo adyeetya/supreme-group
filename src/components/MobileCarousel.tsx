@@ -1,9 +1,10 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
-// @ts-ignore
+// @ts-expect-error: Swiper CSS types are missing in some environments.
 import 'swiper/css';
-// @ts-ignore
+// @ts-expect-error: Swiper pagination CSS lacks TypeScript definitions.
 import 'swiper/css/pagination';
+
 
 
 const videos = {
