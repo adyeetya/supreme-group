@@ -21,7 +21,7 @@ const videos = {
 
 const MobileCarousel = () => {
     return (
-        <div className="block md:hidden bg-black min-h-screen pt-16">
+        <div className="block lg:hidden bg-black min-h-screen pt-16">
             {/* Main Heading */}
             <h1 className="text-3xl font-thin text-white text-center mt-2 mb-6">Evolving the <span className="font-semibold">drive</span> with 360 solutions.</h1>
 

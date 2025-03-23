@@ -12,8 +12,8 @@ function App() {
       <Hero />
       {/* <main className=" min-h-screen overflow-y-auto max-w-screen-2xl mx-auto"> */}
 
-      <section className='hidden md:block h-screen '><SecondSection /></section>
-      <section className='md:hidden'>   <MobileCarousel /></section>
+      <section className='hidden lg:block h-screen '><SecondSection /></section>
+      <section className='lg:hidden'>   <MobileCarousel /></section>
 
       {/* </main> */}
       <ContactForm />
