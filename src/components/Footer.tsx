@@ -53,7 +53,7 @@ const Footer = () => {
 
             {/* Footer Bottom */}
             <div className="mt-8 text-center">
-                <p className="text-sm mb-2">©2024. All Rights Reserved.</p>
+                <p className="text-sm mb-2">©2024. All Rights Reserved. Created by - ADITYA SINGH</p>
                 <p className="text-sm">Supreme House, 110, 16th Road, Chembur, Mumbai – 400071.</p>
             </div>
         </section>
