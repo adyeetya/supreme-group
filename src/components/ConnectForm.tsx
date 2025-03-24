@@ -51,7 +51,7 @@ const ContactForm = () => {
             value={formData.fullName}
             onChange={handleChange}
             placeholder="Full name"
-            className="bg-transparent border-b border-white outline-none w-full p-2"
+            className="bg-transparent border-b border-gray-300 outline-none w-full p-2"
             required
           />
 
@@ -61,7 +61,7 @@ const ContactForm = () => {
             value={formData.email}
             onChange={handleChange}
             placeholder="Email"
-            className="bg-transparent border-b border-white outline-none w-full p-2"
+            className="bg-transparent border-b border-gray-300 outline-none w-full p-2"
             required
           />
 
@@ -71,7 +71,7 @@ const ContactForm = () => {
             value={formData.company}
             onChange={handleChange}
             placeholder="Company"
-            className="bg-transparent border-b border-white outline-none w-full p-2"
+            className="bg-transparent border-b border-gray-300 outline-none w-full p-2"
           />
 
           <textarea
@@ -80,12 +80,12 @@ const ContactForm = () => {
             onChange={handleChange}
             placeholder="Message"
             rows={3}
-            className="bg-transparent border-b border-white outline-none w-full p-2"
+            className="bg-transparent border-b border-gray-300 outline-none w-full p-2"
           ></textarea>
 
           <button
             type="submit"
-            className="border border-white py-2 px-8 rounded-full hover:bg-white hover:text-blue-600 transition"
+            className="border border-gray-300 py-2 px-8 rounded-full hover:bg-white hover:text-blue-600 transition"
           >
             Send
           </button>
